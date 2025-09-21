@@ -52,12 +52,13 @@
     <Compile Include="AddGender.Designer.cs">
       <DependentUpon>AddGender.cs</DependentUpon>
     </Compile>
-    <Compile Include="add_Class.cs">
+    <Compile Include="AddStudnt.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="add_Class.Designer.cs">
-      <DependentUpon>add_Class.cs</DependentUpon>
+    <Compile Include="AddStudnt.Designer.cs">
+      <DependentUpon>AddStudnt.cs</DependentUpon>
     </Compile>
+    <Compile Include="CREATE_DATABASE.cs" />
     <Compile Include="MainUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,13 +67,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQL\CheackData.cs" />
+    <Compile Include="SQL\GetData.cs" />
     <Compile Include="SQL\Connection.cs" />
     <Compile Include="SQL\Insert.cs" />
+    <Compile Include="SQL\model.cs" />
     <EmbeddedResource Include="AddGender.resx">
       <DependentUpon>AddGender.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="add_Class.resx">
-      <DependentUpon>add_Class.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainUI.resx">
       <DependentUpon>MainUI.cs</DependentUpon>

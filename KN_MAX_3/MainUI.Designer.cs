@@ -34,6 +34,7 @@
             this.ADD_GR_BT = new System.Windows.Forms.Button();
             this.EXIT_BT = new System.Windows.Forms.Button();
             this.Test_bt = new System.Windows.Forms.Button();
+            this.Create_db = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ADD_TECH_BT
@@ -162,6 +163,27 @@
             this.Test_bt.UseVisualStyleBackColor = false;
             this.Test_bt.Click += new System.EventHandler(this.Test_bt_Click);
             // 
+            // Create_db
+            // 
+            this.Create_db.BackColor = System.Drawing.Color.Transparent;
+            this.Create_db.BackgroundImage = global::KN_MAX_3.Properties.Resources.Picsart_25_05_17_21_27_21_083;
+            this.Create_db.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Create_db.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Create_db.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Create_db.FlatAppearance.BorderSize = 0;
+            this.Create_db.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Create_db.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Create_db.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Create_db.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.Create_db.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Create_db.Location = new System.Drawing.Point(112, 242);
+            this.Create_db.Name = "Create_db";
+            this.Create_db.Size = new System.Drawing.Size(80, 48);
+            this.Create_db.TabIndex = 6;
+            this.Create_db.Text = "C_DB";
+            this.Create_db.UseVisualStyleBackColor = false;
+            this.Create_db.Click += new System.EventHandler(this.Create_db_Click);
+            // 
             // MainUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,6 +191,7 @@
             this.BackgroundImage = global::KN_MAX_3.Properties.Resources.dark_purple_oppo_r15_stock;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(542, 310);
+            this.Controls.Add(this.Create_db);
             this.Controls.Add(this.Test_bt);
             this.Controls.Add(this.EXIT_BT);
             this.Controls.Add(this.ADD_GR_BT);
@@ -191,6 +214,7 @@
         private System.Windows.Forms.Button ADD_GR_BT;
         private System.Windows.Forms.Button EXIT_BT;
         private System.Windows.Forms.Button Test_bt;
+        private System.Windows.Forms.Button Create_db;
     }
 }
 

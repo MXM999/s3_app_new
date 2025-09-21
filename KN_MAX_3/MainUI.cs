@@ -15,7 +15,7 @@ namespace KN_MAX_3
     {
         Connection_SQL_MXM Conne_test;
         AddGender m_Gen;
-        add_Class m_CLass;
+        AddStudnt m_studnet_add;
         public MainUI()
         {
             InitializeComponent();
@@ -24,19 +24,21 @@ namespace KN_MAX_3
 
         private void ADD_ST_bt_Click(object sender, EventArgs e)
         {
-           
+            m_studnet_add = new AddStudnt();
+            m_studnet_add.Show();
+            this.Hide();
         }
 
         private void ADD_GR_BT_Click(object sender, EventArgs e)
         {
            m_Gen = new AddGender();
            m_Gen.Show();
+           this.Hide();
         }
 
         private void ADD_CL_BT_Click(object sender, EventArgs e)
         {
-            m_CLass = new add_Class();
-            m_CLass.Show();
+           
         }
 
         private void ADD_TECH_BT_Click(object sender, EventArgs e)
@@ -57,6 +59,41 @@ namespace KN_MAX_3
             Conne_test.OpenConn();
             MessageBox.Show(Conne_test.Conne.State.ToString());
             Conne_test.CloesConn();
+        }
+
+        private void Create_db_Click(object sender, EventArgs e)
+        {
+          DialogResult choes =   MessageBox.Show("Create New Database", "Create DB", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (DialogResult.Yes == choes)
+            {
+                DialogResult sure = MessageBox.Show("سوف يتم حذف جيمع المعلومات", "delete all Data", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (sure == DialogResult.Yes)
+                {
+                    int create_stat = CREATE_DATABASE.CreateNewDataBase();
+                    if (create_stat == 0)
+                    {
+                        MessageBox.Show("القاعدة موجودة مسبقاً");
+                    }
+                    else if (create_stat == 1)
+                    {
+                        MessageBox.Show("خطأ في أسم السيرفر قم بتعديله من الكود ");
+                    }
+                    else if (create_stat == 2)
+                    {
+                        MessageBox.Show("تم أنشاء القاعدة بنجاح");
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show(" بل الناقص على جبنة");
+
+                }
+            } 
+            else
+            {
+                MessageBox.Show("بل الناقص");
+            }
         }
     }
 }

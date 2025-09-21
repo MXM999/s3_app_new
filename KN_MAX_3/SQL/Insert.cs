@@ -32,13 +32,13 @@ namespace KN_MAX_3.SQL
                 return false;
             }
         }
-        public bool InsertClass(string Name_Class , int max_size)
+        public bool Insertstu(string Name_Stu, string phone, Guid Gr_Guid)
         {
             try
             {
                 Conne_Plus.OpenConn();
-                string Qur_Insert_Gr = "INSERT INTO CLASS VALUES ('" + Guid.NewGuid() + "','"+ Name_Class + "' , "+ max_size + ")";
-                Command_plus = new SqlCommand(Qur_Insert_Gr, Conne_Plus.Conne);
+                string Qur_Insert_stu = "INSERT INTO STUDENT VALUES ('" + Guid.NewGuid() + "','" + Name_Stu + "' , '" + phone + "' , '" + Gr_Guid + "' )";
+                Command_plus = new SqlCommand(Qur_Insert_stu, Conne_Plus.Conne);
                 Command_plus.ExecuteNonQuery();
                 Conne_Plus.CloesConn();
                 return true;
