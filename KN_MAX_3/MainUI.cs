@@ -1,13 +1,14 @@
-﻿using System;
+﻿using KN_MAX_3.SQL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using KN_MAX_3.SQL;
 
 namespace KN_MAX_3
 {
@@ -16,6 +17,8 @@ namespace KN_MAX_3
         Connection_SQL_MXM Conne_test;
         AddGender m_Gen;
         AddStudnt m_studnet_add;
+        add_Class m_CLass;
+        ADD__Tech m_tech;
         public MainUI()
         {
             InitializeComponent();
@@ -38,12 +41,16 @@ namespace KN_MAX_3
 
         private void ADD_CL_BT_Click(object sender, EventArgs e)
         {
-           
+            m_CLass = new add_Class();
+            m_CLass.Show();
+            this.Hide();
         }
 
         private void ADD_TECH_BT_Click(object sender, EventArgs e)
         {
-
+            m_tech = new ADD__Tech();
+            m_tech.Show();
+            this.Hide();
         }
         private void EXIT_BT_Click(object sender, EventArgs e)
         {
@@ -63,7 +70,8 @@ namespace KN_MAX_3
 
         private void Create_db_Click(object sender, EventArgs e)
         {
-          DialogResult choes =   MessageBox.Show("Create New Database", "Create DB", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+             DialogResult choes =   MessageBox.Show("Create New Database", "Create DB", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (DialogResult.Yes == choes)
             {
                 DialogResult sure = MessageBox.Show("سوف يتم حذف جيمع المعلومات", "delete all Data", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);

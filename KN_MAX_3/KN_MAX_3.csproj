@@ -58,6 +58,18 @@
     <Compile Include="AddStudnt.Designer.cs">
       <DependentUpon>AddStudnt.cs</DependentUpon>
     </Compile>
+    <Compile Include="add_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_Class.Designer.cs">
+      <DependentUpon>add_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD__Tech.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD__Tech.Designer.cs">
+      <DependentUpon>ADD__Tech.cs</DependentUpon>
+    </Compile>
     <Compile Include="CREATE_DATABASE.cs" />
     <Compile Include="MainUI.cs">
       <SubType>Form</SubType>
@@ -74,6 +86,9 @@
     <Compile Include="SQL\model.cs" />
     <EmbeddedResource Include="AddGender.resx">
       <DependentUpon>AddGender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudnt.resx">
+      <DependentUpon>AddStudnt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainUI.resx">
       <DependentUpon>MainUI.cs</DependentUpon>

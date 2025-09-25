@@ -1,6 +1,6 @@
 ﻿namespace KN_MAX_3
 {
-    partial class AddStudnt
+    partial class ADD__Tech
     {
         /// <summary>
         /// Required designer variable.
@@ -28,25 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.name_stu = new System.Windows.Forms.TextBox();
+            this.name_th = new System.Windows.Forms.TextBox();
             this.ADD_bt = new System.Windows.Forms.Button();
             this.BACK_BT = new System.Windows.Forms.Button();
-            this.phone_stu = new System.Windows.Forms.TextBox();
+            this.phone_th = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Gender_Select = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // name_stu
+            // name_th
             // 
-            this.name_stu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.name_stu.ForeColor = System.Drawing.Color.Green;
-            this.name_stu.Location = new System.Drawing.Point(236, 48);
-            this.name_stu.Margin = new System.Windows.Forms.Padding(4);
-            this.name_stu.Name = "name_stu";
-            this.name_stu.Size = new System.Drawing.Size(215, 36);
-            this.name_stu.TabIndex = 0;
+            this.name_th.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.name_th.ForeColor = System.Drawing.Color.Green;
+            this.name_th.Location = new System.Drawing.Point(177, 39);
+            this.name_th.Name = "name_th";
+            this.name_th.Size = new System.Drawing.Size(162, 30);
+            this.name_th.TabIndex = 0;
             // 
             // ADD_bt
             // 
@@ -61,10 +60,9 @@
             this.ADD_bt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ADD_bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.ADD_bt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ADD_bt.Location = new System.Drawing.Point(253, 289);
-            this.ADD_bt.Margin = new System.Windows.Forms.Padding(4);
+            this.ADD_bt.Location = new System.Drawing.Point(190, 235);
             this.ADD_bt.Name = "ADD_bt";
-            this.ADD_bt.Size = new System.Drawing.Size(199, 78);
+            this.ADD_bt.Size = new System.Drawing.Size(149, 63);
             this.ADD_bt.TabIndex = 5;
             this.ADD_bt.Text = "ADD";
             this.ADD_bt.UseVisualStyleBackColor = false;
@@ -83,24 +81,22 @@
             this.BACK_BT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BACK_BT.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.BACK_BT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BACK_BT.Location = new System.Drawing.Point(16, 289);
-            this.BACK_BT.Margin = new System.Windows.Forms.Padding(4);
+            this.BACK_BT.Location = new System.Drawing.Point(12, 235);
             this.BACK_BT.Name = "BACK_BT";
-            this.BACK_BT.Size = new System.Drawing.Size(199, 78);
+            this.BACK_BT.Size = new System.Drawing.Size(149, 63);
             this.BACK_BT.TabIndex = 6;
             this.BACK_BT.Text = "BACK";
             this.BACK_BT.UseVisualStyleBackColor = false;
             this.BACK_BT.Click += new System.EventHandler(this.BACK_BT_Click);
             // 
-            // phone_stu
+            // phone_th
             // 
-            this.phone_stu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.phone_stu.ForeColor = System.Drawing.Color.Green;
-            this.phone_stu.Location = new System.Drawing.Point(236, 118);
-            this.phone_stu.Margin = new System.Windows.Forms.Padding(4);
-            this.phone_stu.Name = "phone_stu";
-            this.phone_stu.Size = new System.Drawing.Size(215, 36);
-            this.phone_stu.TabIndex = 7;
+            this.phone_th.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.phone_th.ForeColor = System.Drawing.Color.Green;
+            this.phone_th.Location = new System.Drawing.Point(177, 96);
+            this.phone_th.Name = "phone_th";
+            this.phone_th.Size = new System.Drawing.Size(162, 30);
+            this.phone_th.TabIndex = 7;
             // 
             // label1
             // 
@@ -108,12 +104,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label1.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.label1.Location = new System.Drawing.Point(19, 52);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(14, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 31);
+            this.label1.Size = new System.Drawing.Size(120, 26);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Student Name";
+            this.label1.Text = "Tech name";
             // 
             // label2
             // 
@@ -121,10 +116,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label2.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.label2.Location = new System.Drawing.Point(19, 122);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(14, 99);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 31);
+            this.label2.Size = new System.Drawing.Size(75, 26);
             this.label2.TabIndex = 9;
             this.label2.Text = "Phone";
             // 
@@ -132,10 +126,9 @@
             // 
             this.Gender_Select.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.Gender_Select.FormattingEnabled = true;
-            this.Gender_Select.Location = new System.Drawing.Point(236, 181);
-            this.Gender_Select.Margin = new System.Windows.Forms.Padding(4);
+            this.Gender_Select.Location = new System.Drawing.Point(177, 147);
             this.Gender_Select.Name = "Gender_Select";
-            this.Gender_Select.Size = new System.Drawing.Size(215, 37);
+            this.Gender_Select.Size = new System.Drawing.Size(162, 33);
             this.Gender_Select.TabIndex = 10;
             // 
             // label3
@@ -144,31 +137,29 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label3.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.label3.Location = new System.Drawing.Point(19, 190);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(14, 154);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(187, 31);
+            this.label3.Size = new System.Drawing.Size(151, 26);
             this.label3.TabIndex = 11;
             this.label3.Text = "Gender Select";
             // 
-            // AddStudnt
+            // ADD__Tech
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::KN_MAX_3.Properties.Resources.dark_purple_oppo_r15_stock;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(723, 382);
+            this.ClientSize = new System.Drawing.Size(542, 310);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Gender_Select);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.phone_stu);
+            this.Controls.Add(this.phone_th);
             this.Controls.Add(this.BACK_BT);
             this.Controls.Add(this.ADD_bt);
-            this.Controls.Add(this.name_stu);
+            this.Controls.Add(this.name_th);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "AddStudnt";
+            this.Name = "ADD__Tech";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ADD Gender";
             this.ResumeLayout(false);
@@ -178,10 +169,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox name_stu;
+        private System.Windows.Forms.TextBox name_th;
         private System.Windows.Forms.Button ADD_bt;
         private System.Windows.Forms.Button BACK_BT;
-        private System.Windows.Forms.TextBox phone_stu;
+        private System.Windows.Forms.TextBox phone_th;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox Gender_Select;
